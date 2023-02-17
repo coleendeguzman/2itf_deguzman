@@ -35,17 +35,19 @@ if(isset($save))
 
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" type="text/css" href="calculatorcss.css">
     <head>
-        <title>The Tax Calculator</title>
-</head>
-    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="calculatorcss.css">
+      <title>The Tax Calculator</title>
+    </head>
+
 <body>
     <center>
-
+    <h1 id="title">have you met Taxxy?</h1><br><br><br><br><br><br>
         <form method="post">
           <br>
-            <h2>The Tax Calculator</h2>
+            <h2>Taxxy: A Tax Calculator</h2>
 
             <label>Salary:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
               <input type="number" name="sr" value="<?php  echo @$sr;?>" placeholder="Enter Salary"/><br><br>
