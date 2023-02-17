@@ -55,7 +55,7 @@ form {
     border: none;
     outline: none;    }
 
-input[type=currency] {
+input[type=number] {
     background-color: #fff;
     text-align: left;
     border: none;

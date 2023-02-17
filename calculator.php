@@ -5,11 +5,11 @@ if(isset($save))
 	switch($case)
 	{
 		case 'Bi-Monthly':
-		$annualSalary=$fn*24;
+		$annualSalary=$sr*24;
 		break;
 		
 		case 'Monthly':
-		$annualSalary=$fn*12;
+		$annualSalary=$sr*12;
 		break;
 	}
 
@@ -48,7 +48,7 @@ if(isset($save))
             <h2>The Tax Calculator</h2>
 
             <label>Salary:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
-              <input type="number" min="0.00" max="10000.00" step="0.01" name="fn" value="<?php  echo @$fn;?>" placeholder="Enter Salary"/><br><br>
+              <input type="number" name="sr" value="<?php  echo @$sr;?>" placeholder="Enter Salary"/><br><br>
             
             <label>Type:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
               <input type="radio" id="Bi-monthly" name="case" value="Bi-Monthly"/>
@@ -62,13 +62,13 @@ if(isset($save))
             <br><br>
 
             <label>Annual Salary:&nbsp</label>
-                <input type="number" min="0.00" max="10000.00" step="0.01" readonly="readonly" disabled="disabled" value="<?php  echo @$annualSalary;?>"/><br><br>
+                <input type="number" readonly="readonly" disabled="disabled" value="<?php  echo @$annualSalary;?>"/><br><br>
             
             <label>Est. Annual Tax:&nbsp</label>
-				        <input type="number" min="0.00" max="10000.00" step="0.01" readonly="readonly" disabled="disabled" value="<?php  echo @$annualTax;?>"/><br><br>
+				        <input type="number" readonly="readonly" disabled="disabled" value="<?php  echo @$annualTax;?>"/><br><br>
 
             <label>Est. Monthly Tax:&nbsp</label>
-				        <input type="number" min="0.00" max="10000.00" step="0.01" readonly="readonly" disabled="disabled" value="<?php  echo @$monthlyTax;?>"/><br><br>
+				        <input type="number" readonly="readonly" disabled="disabled" value="<?php  echo @$monthlyTax;?>"/><br><br>
    
         </form>
     
