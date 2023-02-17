@@ -56,7 +56,7 @@ if(isset($save))
               <input type="radio" id="Bi-monthly" name="case" value="Bi-Monthly"/>
             <label for="bi-monthly">Bi-Monthly</label>
           
-            <input type="radio" id="Monthly" name="case" value="Monthly"checked>
+            <input type="radio" id="Monthly" name="case" value="Monthly">
             <label for="Monthly">Monthly</label>
         
             <br><br>
